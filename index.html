@@ -4,55 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Fan Club</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Cricket Club</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="#"></a>
-        </div>
-        <button class="menu-btn">&#9776;</button>
-    </header>
+    <!-- Navbar -->
+    <div style="background-image: url('./src/herobg.jpg');  background-size: contain; background-position: top;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Navbar brand/logo -->
+                
+                
+        
+                <!-- Hamburger button for mobile screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!-- Navbar links, collapsible on smaller screens -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#programs">Programs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#speakers">Speakers</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    <nav class="mobile-nav hidden">
-        <button class="close-btn">&times;</button>
-        <ul>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+        <!-- Header Section -->
+        <header class="text-center py-5" style="background-image: url('header-bg.jpg'); background-size: cover;">
+            <div class="container">
+                <h1 class="text-danger ">"Hello! Sharing world"</h1>
+                <h2 class="" style="font-weight: 1000; color: chocolate;">Cricket Summit 2024</h2>
+                <div style="background-color: rgb(234, 234, 234); border: 2px solid white;">
+                    <p>Join us for an unforgettable experience that celebrates the world of cricket – where legends meet, skills are honed, and fans unite.
+                    </p>
+                </div>
+                <p style="font-size: x-large; font-weight: 900; color: rgb(90, 90, 90);"><strong>2015.10.15(THU) ~
+                        16(FRI)</strong></p>
+                <p style="font-size: small; color: darkgrey;">@ National Cricket stadium , Lahore, Pakistan</p>
+            </div>
+        </header>
+    </div>
 
-    <section class="hero">
-        <h1 class="cricketlover">"Hello! Cricket Lovers"</h1>
-        <p class="p1">CREATIVE CONCERT 2024</p>
-        <p>A joyful celebration of music, bringing together talented artists from around the world.</p>
-        <p>2024.11.15(FRI) ~ 16(SAT)</p>
-        <p>@ National Music Hall, Seoul, Korea</p>
-    </section>
+    <!-- main section -->
+    <div class="container-fluid text-center bg-dark text-white py-4"
+        style="background-image: url('mainsec.jpg'); background-size: cover; ">
 
-    <section class="main-program">
-        <h2>Main Program</h2>
-        <div class="program-item">
-            <h3>Live Performances</h3>
-            <p>Enjoy live Talks  with top  Cricketers</p>
+        <h2 id="programs">Main Program</h2>
+        <div class="row mt-4">
+           
+            <div class="col-12 mb-3">
+                <div class="card  text-light" style="background-color: rgba(120, 118, 118, 0.527);">
+                    <div class="card-body d-flex align-items-center">
+                        <img src="src/desk.svg" alt="Lecture Icon" class="me-3" style="width: 60px;">
+                        <div>
+                            <h5 class="card-title text-danger">Live Talks</h5>
+                            <p class="card-text">Meet cricket legends,  and analysts who shape the future of the game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 mb-3">
+                <div class="card  text-light" style="background-color: rgba(120, 118, 118, 0.527);">
+                    <div class="card-body d-flex align-items-center">
+                        <img src="src/board.svg" alt="CC Exhibition Icon" class="me-3" style="width: 60px;">
+                        <div>
+                            <h5 class="card-title text-danger">Demonstrations</h5>
+                            <p class="card-text">Watch live demos and experience the techniques that top players use on the field.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-12 mb-3">
+                <div class="card  text-light" style="background-color: rgba(120, 118, 118, 0.527);">
+                    <div class="card-body d-flex align-items-center">
+                        <img src="src/message.svg" alt="Forum Icon" class="me-3" style="width: 60px;">
+                        <div>
+                            <h5 class="card-title text-danger">Forum</h5>
+                            <p class="card-text">Have the time to share your thoughts and opinions with experts for each
+                                topic.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="card  text-light" style="background-color: rgba(120, 118, 118, 0.527);">
+                    <div class="card-body d-flex align-items-center">
+                        <img src="src/screen.svg" alt="Workshop Icon" class="me-3" style="width: 60px;">
+                        <div>
+                            <h5 class="card-title text-danger">Fan Zone</h5>
+                            <p class="card-text">Enjoy exclusive content, player interactions, and fun cricket-themed games in our fan zone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="card  text-light" style="background-color: rgba(120, 118, 118, 0.527);">
+                    <div class="card-body d-flex align-items-center">
+                        <img src="src/circle.svg" alt="CC Ignite Icon" class="me-3" style="width: 60px;">
+                        <div>
+                            <h5 class="card-title text-danger">Location</h5>
+                            <p class="card-text">Taking place at the heart of cricket action, get ready to immerse yourself in a venue designed for cricket enthusiasts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="program-item">
-            <h3>Workshops</h3>
-            <p>Join  workshops with professionals to learn and enhance your skills.</p>
+        <div class="mt-4">
+            <a href="#" class="btn btn-danger" style="padding: 20px;">Join Cricket Summit 2024</a>
         </div>
-        <div class="program-item">
-            <h3>Panel Discussions</h3>
-            <p>Engage in discussions with crickets experts on the future of Cricket.</p>
-        </div>
-    </section>
+    </div>
 
-    <section id="speakers">
-        <h2>Featured Artists</h2>
-        <div id="speakers-list"></div>
-    </section>
+    <div class="container my-5">
+        <h2 class="text-center" id="speakers">Featured Speakers</h2>
+        <hr class="w-25 mx-auto" style="border-top: 3px solid #ff4b4b;">
+
+        <!-- Speaker 1 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-3 text-end">
+                <img src="src/imranKhan.webp" alt="Imran Khan" class="img-fluid" >
+            </div>
+            <div class="col-9">
+                <h4>Imran Khan</h4>
+                <p class="text-danger" style="font-size: small;">Former Captain Pakistan</p>
+                <p>Legendary all-rounder and former captain, Imran Khan led Pakistan to their first-ever World Cup victory in <i>1992.</i> </p>
+            </div>
+        </div>
+
+        <!-- Speaker 2 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-3 text-end">
+                <img src="src/st.webp" alt="SohYeong Noh" class="img-fluid" >
+            </div>
+            <div class="col-9">
+                <h4>Sachin Tendulkar</h4>
+                <p class="text-danger" style="font-size: small;">Former Captain India
+                </p>
+                <p>Known as the 'Master Blaster,' Sachin redefined the art of batting with his unmatched skill and sportsmanship. A true cricket icon, he inspires players across the globe.</p>
+            </div>
+        </div>
+
+        <!-- Additional Speakers (Initially Hidden) -->
+        <div id="extraSpeakers" style="display: none;">
+            <!-- Speaker 3 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-3 text-end">
+                    <img src="src/wasimakrm.webp" alt="Speaker 3" class="img-fluid" >
+                </div>
+                <div class="col-9">
+                    <h4>Wasim Akram</h4>
+                    <p class="text-danger" style="font-size: small;">Former Captain Pakistan</p>
+                    <p>Legendary fast bowler and swing specialist, Wasim’s insights on pace and precision make him one of the most respected voices in cricket.</p>
+                </div>
+            </div>
+
+            <!-- Speaker 4 -->
+            <div class="row align-items-center mb-5">
+                <div class="col-3 text-end">
+                    <img src="src/st.webp" alt="Speaker 4" class="img-fluid" >
+                </div>
+                <div class="col-9">
+                    <h4>Ricky Ponting</h4>
+                    <p class="text-danger" style="font-size: small;">Former Captain Australia</p>
+                    <p>Former Australian captain and two-time World Cup winner</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- More/Less Button -->
+        <div class="text-center mt-4">
+            <button id="toggleButton" class="btn btn-outline-dark" onclick="toggleSpeakers()">More</button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
